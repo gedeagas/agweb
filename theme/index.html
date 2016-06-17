@@ -1,0 +1,89 @@
+<header class="blogheader">
+  <div ng-controller="PostsCtrl">
+  <div ng-repeat="post in posts">
+
+  
+  <a href="/agmamp" class="post-back-to-home hidden-xs">Back To Home</a>
+
+    <div class="home-titles-lg home-title-width-lg visible-md">
+
+        <h3 data-placeholder="Untitled Post" class="veryboldfont text-uppercase text-left" data-field-name="title" style="z-index: 80;">{{post.title.rendered}}</h3>
+        <br>
+        <h4 class="post-title-light" ng-bind-html="post.excerpt.rendered | strLimit: 256" data-placeholder="Type a subtitle" data-field-name="subtitle" style="z-index: 1;">...</h4>
+        <a class="btn btn-info" role="button" ng-href="{{linkartikel}}">Read More</a>
+
+
+
+    </div>
+
+    <div class="home-titles-lg home-title-width-lg visible-lg">
+
+        <h2 data-placeholder="Untitled Post" class="veryboldfont text-uppercase text-left" data-field-name="title" style="z-index: 80;">{{post.title.rendered}}</h2>
+        <br>
+        <h3 class="post-title-light" ng-bind-html="post.excerpt.rendered | strLimit: 256" data-placeholder="Type a subtitle" data-field-name="subtitle" style="z-index: 1;">...</h3>
+        <a class="btn btn-info" role="button" ng-href="{{linkartikel}}">Read More</a>
+
+
+
+    </div>
+
+    <div class="post-titles visible-sm">
+
+        <h2 data-placeholder="Untitled Post" class="post_title_width veryboldfont text-uppercase text-center" data-field-name="title" style="z-index: 80;">{{post.title.rendered}}</h2>
+        <br>
+        <h3 class="post_title_width post-title-light" data-placeholder="Type a subtitle" data-field-name="subtitle" style="z-index: 1;">{{post.acf.quote}}</h3>
+
+
+
+    </div>
+
+    
+
+
+    <div id="cover-image" class="blurbg" style="background-image:url({{post.acf.mainimage.sizes.large}})">
+
+
+    </div>
+
+
+  </div>
+  </div>
+    
+</header>
+
+<div class="container-fluid">
+<div class="row bg-kayakputih">
+  
+  <div class="col-md-12 col-lg-12">
+
+    <div ng-controller="ListPostCtrl">
+      <div ng-repeat="listpost in listposts">
+      
+        <div class="col-md-3 col-lg-3">
+
+        <div class="thumbnail">
+          <img ng-src="{{listpost.acf.mainimage.sizes.medium_large}}" alt="...">
+          <div class="caption">
+            <h3>{{listpost.title.rendered}}</h3>
+            <p><div ng-bind-html="listpost.excerpt.rendered | strLimit: 250">...</div></p>
+            <p><a ng-href="/agmamp/post/{{listpost.slug}}" class="btn btn-primary" role="button">Read More</a></p>
+          </div>
+        </div>
+
+          
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+
+<div class="">
+  <img src="img/archipel.png">
+</div>

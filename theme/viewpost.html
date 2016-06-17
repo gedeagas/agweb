@@ -1,0 +1,95 @@
+
+
+<header class="blogheader">
+  <div ng-controller="ViewPostCtrl">
+  <div ng-repeat="post in posts">
+
+  
+  <div><a href="/agmamp" class="post-back-to-home">Back To Home</a></div>
+
+    <div class="post-titles">
+
+        <h1 data-placeholder="Untitled Post" class="post_title_width veryboldfont text-uppercase text-center" data-field-name="title" style="z-index: 80;">{{post.title.rendered}}</h1>
+        <br>
+        <h2 class="post_title_width post-title-light" data-placeholder="Type a subtitle" data-field-name="subtitle" style="z-index: 1;">{{post.acf.quote}}</h2>
+
+
+
+    </div>
+
+    <div class="post-titles-author"> 
+
+      By, Agastya Darma
+
+    </div>
+
+
+    <div id="cover-image" class="blurbg" style="background-image:url({{post.acf.mainimage.sizes.large}})">
+
+
+    </div>
+
+
+  </div>
+  </div>
+    
+</header>
+
+
+
+
+<div class="container">
+<div class="row">
+  
+  <div ng-controller="ViewPostCtrl">
+  <div ng-repeat="post in posts">
+
+
+
+
+  
+
+  <div class="blogwidth">
+
+  <p class="blogwidth"><div  class="blogwidth typefontforblog" ng-bind-html="post.content.rendered"></div></p>
+  </div>
+
+
+
+
+  </div>
+  </div>
+
+  
+
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 post-title-comment-container">
+      <span class="post-title-comment">Comments</span>
+
+  </div>
+
+
+  <div id="disqus_thread"></div>
+<script>
+   
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//agastyablog.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+</div>

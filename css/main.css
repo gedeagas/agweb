@@ -1,48 +1,25 @@
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,300,700,900);
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-.mainfont {
-
-	font-family: 'Source Sans Pro', sans-serif !important;
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f5f5f5;
 }
 
-.veryboldfont {
-
-	font-weight: 900 !important;
-}
-
-.typefontforblog { 
-
-	font-size: 18px !important;
-	font-weight: 300 !important;
-    color: #6a6a6a;
-
-}
-
-.blogwidth {
-
- 	
- 	margin: 0 auto;
-
-}
+/* ==========================================================================
+   The Basic CSS
 
 
+   AGASTYA DARMA 
+   ARCHIPEL STUDIO 
 
-img.blogwidth {
-       display: block;
-    max-width: 100%;
-    height: auto;
-}
+   DESIGN IN MALANG 
+   BUILT IN BEKASI 
 
-.blogheader {
 
-	height: 100vh;
-    background: rgba(26, 26, 26, 0.82);
-    position: relative;
-    color: #fff;
-    margin-bottom: 4%;
-    overflow: hidden;
-}
+   ========================================================================== */
+
 
 #cover-image {
     background: #565656;
@@ -63,6 +40,111 @@ img.blogwidth {
     z-index: -1;
 
 }
+
+.blogheader {
+
+    height: 100vh;
+    background: rgba(26, 26, 26, 0.63);
+    position: relative;
+    color: #fff;
+    margin-bottom: 4%;
+    overflow: hidden;
+}
+
+.mainfont {
+
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.veryboldfont {
+
+    font-weight: 900 !important;
+}
+
+.typefontforblog { 
+
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: #6a6a6a;
+
+}
+
+
+.button-one {
+
+    
+    z-index: 999999999999;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 4px 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+.button-one:hover {
+    color: #ccc;
+}
+
+/* unvisited link */
+.button-one:link {
+     text-decoration: none;
+     color: #fff;
+}
+
+/* visited link */
+.button-one:visited {
+     text-decoration: none;
+     color: #fff;
+}
+
+.bg-kayakputih {
+    background-color: #f5f5f5;
+   
+}
+
+
+
+/* ==========================================================================
+   POST VIEW CSS 
+
+
+   AGASTYA DARMA 
+   ARCHIPEL STUDIO 
+
+   DESIGN IN MALANG 
+   BUILT IN BEKASI 
+
+
+   ========================================================================== */
+
+
+
+
+.blogwidth {
+
+ 	
+ 	margin: 0 auto;
+
+}
+
+
+
+.blogwidth img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+
 
 .post-titles {
     position: absolute;
@@ -186,3 +268,38 @@ img.post-photo-wide {
     overflow: hidden;
 
 }
+
+
+
+
+/* ==========================================================================
+   Home CSS 
+
+   
+   AGASTYA DARMA 
+   ARCHIPEL STUDIO 
+
+   DESIGN IN MALANG 
+   BUILT IN BEKASI 
+
+
+   ========================================================================== */
+
+   .home-titles-lg {
+    position: absolute;
+    z-index: 6;
+    text-align: left;
+    color: #fff;
+    top: 30%;
+    width: 100%;
+    
+}
+
+    .home-title-width-lg {
+
+    max-width: 40%;
+    /* margin: 0 auto; */
+    margin-left: 2%;
+
+    }
+
