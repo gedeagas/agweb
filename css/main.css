@@ -4,7 +4,9 @@
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #f5f5f5;
+    background-color: #f6f6f6;
+      /* Margin bottom by footer height */
+    
 }
 
 /* ==========================================================================
@@ -17,9 +19,15 @@ body {
    DESIGN IN MALANG 
    BUILT IN BEKASI 
 
+  
 
    ========================================================================== */
 
+footer {
+
+  padding: 20px 10px 20px 10px;
+  background-color: #fff;
+}
 
 #cover-image {
     background: #565656;
@@ -303,3 +311,28 @@ img.post-photo-wide {
 
     }
 
+
+    .img-footer-logo {
+      display: block;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+    }
+
+  .home-header {
+    padding: 10px;
+    background-color: #fff;
+    height: 80px;
+    z-index: 9999;
+    color: #333;
+  }
+
+  .hometext {
+     margin: auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+  }
+
+
+
+  

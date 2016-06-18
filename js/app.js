@@ -121,7 +121,7 @@ app.controller('ListPostCtrl', function($scope, $http, $routeParams, $rootScope,
 
   $http({
           method: 'GET',
-          url: 'https://agastyadarma.com/api/blog/wp-json/wp/v2/posts/?per_page=6'
+          url: 'https://agastyadarma.com/api/blog/wp-json/wp/v2/posts/?per_page=4'
         }).then(function successCallback(response) {
             
           // Mengecek apakah null / tidak ada response 
